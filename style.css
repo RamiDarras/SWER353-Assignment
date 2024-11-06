@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Open Sans;
+}
+body .container {
+    display: flex;
+}
+a {
+    text-decoration: none;
+    color: rgb(219, 219, 219);
+    transition: font-size 0.1s ease-in-out;
+}
+h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 5em;
+}
+h2 {
+    font-size: 2.5em;
+}
+h3 {
+    font-size: 1.5em;
+}
+h4 {
+    font-size: 1.2em;
+}
+.orange {
+    color: #317cb3;
+}
+.gray {
+    color: #868e96;
+}
+.dark-gray {
+    color: #495057;
+}
+.bold {
+    font-weight: bold;
+}
+.sidebar {
+    background-color: #317cb3;
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar .side-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+.sidebar .side-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+}
+.side-nav a {
+    text-transform: uppercase;
+}
+.side-nav a.active {
+    color: white;
+    font-size: 1.2em;
+}
+.side-nav .side-img {
+    height: max-content;
+    width: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.side-nav .side-img img {
+    border-radius: 100%;
+    width: 15vw;
+    height: 40vh;
+    object-fit: contain;
+}
+.container main {
+    padding-left: 35%;
+}
+.container main .about,
+.experience,
+.education,
+.skills,
+.interests,
+.awards {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    height: 100vh;
+}
+.title-date {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3%;
+}
+.personal p {
+    text-transform: uppercase;
+}
+.about .social {
+    display: flex;
+    gap: 5%;
+}
+.programmingLanguages .icons {
+    display: flex;
+    gap: 5%;
+}
+.workPhase {
+    display: flex;
+    flex-direction: column;
+}
+.checks {
+    display: flex;
+    gap: 1%;
+}
+.interests .workPhase {
+    gap: 20px;
+}
+.awards .trophies {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.awards .trophy {
+    display: flex;
+    align-items: center;
+    gap: 1%;
+}
+.workPhase .title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sub-spacing {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.section-spacing {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.gold {
+    color: #ffc107;
+}
+.silver {
+    color: #c0c0c0;
+}
+.bronze {
+    color: #cd7f32;
+}
