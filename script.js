@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const top = section.offsetTop
             const bottom = top + section.offsetHeight
             const hash = section.getAttribute("id")
-            if (scrollPos >= top && scrollPos < bottom) {
+            if (scrollPos >= top-60 && scrollPos < bottom) {
                 navLinks.forEach((link) => {
                     link.classList.remove("active")
                     if (link.getAttribute("href").endsWith(hash)) {
