@@ -23,12 +23,13 @@ h3,
 h4 {
     font-family: Saira Extra Condensed;
     text-transform: uppercase;
+    transition: 0.5s;
 }
 h1 {
-    font-size: 7em;
+    font-size: 8em;
 }
 h2 {
-    font-size: 5em;
+    font-size: 6em;
 }
 h3 {
     font-size: 2.5em;
@@ -36,6 +37,7 @@ h3 {
 h4 {
     font-size: 1.5em;
 }
+
 .blue {
     color: #317cb3;
 }
@@ -51,7 +53,7 @@ h4 {
 .sidebar {
     background-color: #317cb3;
     height: 100%;
-    width: 30%;
+    width: 20vw;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -60,6 +62,9 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.sidebar .side-nav .navIcons {
+    display: none;
 }
 .sidebar .side-nav {
     display: flex;
@@ -81,32 +86,33 @@ h4 {
     font-size: 1.2em;
 }
 .side-nav .side-img {
-    height: max-content;
-    width: max-content;
-    width: 100%;
     display: flex;
     justify-content: center;
 }
 .side-nav .side-img img {
+    width: 11vw;
     border-radius: 100%;
-    width: 15vw;
-    height: 40vh;
     object-fit: contain;
 }
+
 .container main {
-    padding-left: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    padding-left: 25vw;
+    padding-right: 5vw;
+    justify-content: center;
 }
-.container main .about,
+.about,
 .experience,
 .education,
 .skills,
 .interests,
-.awards {
+.awards,
+.contact {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    justify-content: center;
-    height: 100vh;
+    gap: 20px;
 }
 .title-date {
     display: flex;
@@ -119,6 +125,9 @@ h4 {
 .about .social {
     display: flex;
     gap: 5%;
+}
+.social i {
+    cursor: pointer;
 }
 .programmingLanguages .icons {
     display: flex;
@@ -203,7 +212,7 @@ form {
     justify-content: center;
 }
 .button button {
-    background-color:#317cb3;
+    background-color: #317cb3;
     color: white;
     padding: 10px 20px;
     border: 0;
@@ -214,3 +223,92 @@ form {
     justify-content: center;
     align-items: center;
 }
+footer {
+    margin-bottom: 10%;
+}
+@media screen and (max-width: 840px) {
+    body {
+        font-size: 1em;
+    }
+    h1 {
+        font-size: 5em;
+    }
+    h2 {
+        font-size: 3em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    h4 {
+        font-size: 1.2em;
+    }
+    .sidebar {
+        width: 20%;
+    }
+   
+    
+}
+@media screen and (max-width: 620px) {
+    body {
+        font-size: 0.8rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    body .container {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .sidebar {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+    }
+    .sidebar .side-img {
+        display: none;
+    }
+    .sidebar .side-nav .navIcons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .sidebar .side-nav .navText {
+        display: none;
+    }
+    .sidebar .side-nav {
+        width: 100%;
+        padding: 0 10%;
+    }
+    .sidebar .side-nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .container main {
+        padding: 20vh 0 5vh 5vh;
+        gap:100px;
+
+    }
+    .title-date {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 3%;
+    }
+   .form {
+    width: 80%;
+   }
+}
+
